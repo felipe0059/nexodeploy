@@ -77,11 +77,11 @@ public class PostagemController
 		if(postagemExistente.isPresent())
 		{
 			postagemrepository.deleteById(id);
-			return ResponseEntity.status(HttpStatus.OK).body("POSTAGEM DELETADA!!!");
+			return ResponseEntity.status(200).build();
 		}
 		else
 		{
-			return ResponseEntity.status(HttpStatus.OK).body("POSTAGEM NÃO ENCONTRADA!!!");
+			return ResponseEntity.status(400).build();
 		}
 	}
 	

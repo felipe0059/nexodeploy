@@ -85,11 +85,11 @@ public class TemaController
 		if(temaExistente.isPresent())
 		{
 			repository.deleteById(id);
-			return ResponseEntity.status(HttpStatus.OK).body("ID DELETADO!!!");
+			return ResponseEntity.status(200).build();
 		}
 		else
 		{
-			return ResponseEntity.status(HttpStatus.OK).body("ID NÃO ENCONTRADO!!!");
+			return ResponseEntity.status(400).build();
 		}
 	}
 

@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
 import generationBrasil.Nexo.Model.Usuario;
 import generationBrasil.Nexo.Repository.UsuarioRepository;
 
-
-
 /**
  * Classe utilizada para validação do usuário no banco de dados.
  * 

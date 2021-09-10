@@ -26,7 +26,7 @@ public class SwaggerConfig {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("br.com.devs.Nexo.Controller")).paths(PathSelectors.any())
+				.apis(RequestHandlerSelectors.basePackage("generationBrasil.Nexo")).paths(PathSelectors.any())
 				.build().apiInfo(metadata()).useDefaultResponseMessages(false)
 				.globalResponses(HttpMethod.GET, responseMessage()).globalResponses(HttpMethod.POST, responseMessage())
 				.globalResponses(HttpMethod.PUT, responseMessage())
